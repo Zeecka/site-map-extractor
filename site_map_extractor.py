@@ -385,8 +385,8 @@ class BurpExtender(IBurpExtender, ITab):
                 continue
             try:
                 self.urlDecode = self._helpers.urlDecode(str(self.url))
-	    except:
-		continue
+	        except:
+		        continue
             self.response = i.getResponse()
             if self.response == None:
                 continue
